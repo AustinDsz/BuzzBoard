@@ -1,0 +1,23 @@
+<html>
+    <head>
+        <title><%=title%></title>
+        <link rel="stylesheet" href="./styles.css">
+    </head>
+    <body>
+        <%-include('./templates/header.ejs', {title: title}) %>
+        <%-include('./templates/navbar.ejs', {name: "New message", link:"/new"}) %>
+        
+        <%messages.forEach((message)=>{%>
+            <ul>
+                <li><%=message.user%></li>
+                <li><%=message.text%></li>
+                <li><%=message.added%></li>
+            </ul>
+            
+            
+            <a href="/msgDetails/<%=message.user%>?text=<%=message.text%>&added=<%=message.added%>"><button id="btn">OPEN</button></a>
+
+            <%});%>
+            
+        </body>
+</html>

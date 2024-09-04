@@ -1,0 +1,12 @@
+<html>
+    <head>
+        <title>MESSAGE</title>
+    </head>
+    <body>
+        <%-include('./templates/header.ejs', {title: "Message Details"}) %>
+        <p><%=user%></p>
+        <p><%=text%></p>
+        <p><%=added%></p>
+        <%- include("./templates/footer.ejs")%>
+    </body>
+</html>
