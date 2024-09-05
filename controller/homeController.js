@@ -10,7 +10,7 @@ const getMessages = asyncHandler(async(req, res)=>{
         throw error;
     }
 
-    res.render("index", {messages: messages, title: 'Mini Messageboard'});
+    res.render("index", {messages: messages, title: 'BUZZBOARD'});
 });
 
 

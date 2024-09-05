@@ -1,3 +1,5 @@
+const date = new Date();
+const month = date.toLocaleString('default', { month: 'long' });
 
 
 //messages
@@ -5,12 +7,12 @@ const messages = [
   {
     text: "Hi there!",
     user: "Amando",
-    added: new Date()
+    added: `${date.getDate()} ${month} ${date.getFullYear()}`
   },
   {
     text: "Hello World!",
     user: "Charles",
-    added: new Date()
+    added: `${date.getDate()} ${month} ${date.getFullYear()}`
   }
 ];
 
