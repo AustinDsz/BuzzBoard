@@ -42,7 +42,7 @@ app.use(errorHandler);
 
 
 //listener
-app.listen(PORT, ()=>{console.log(`messaging app - listening on port http://localhost:${PORT}`);})
+app.listen(PORT, "0.0.0.0",  ()=>{console.log(`messaging app - listening on port http://localhost:${PORT}`);})
 
 
 
